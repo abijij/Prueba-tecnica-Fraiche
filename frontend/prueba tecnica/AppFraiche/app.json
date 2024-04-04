@@ -1,0 +1,100 @@
+{
+  "expo": {
+    "name": "GastosApp",
+    "slug": "AppDeliveryReactNative",
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "custom photos permission",
+          "cameraPermission": "Allow $(MedicalSupply) to open the camera",
+          "//": "Disables the microphone permission",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff",
+          "sounds": [
+            "./assets/notificationsound.wav"
+          ]
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33,
+            "buildToolsVersion": "33.0.0"
+          }
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/Fraiche-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#28C8D4"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.abijij.appFraiche",
+      "config": {
+        "googleMapsApiKey": "AIzaSyDw2jNezWWj1Bi0wLV_NMXZ9ugKIOE37Wo"
+      },
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "locatioin",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.abijij.appFraiche",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDw2jNezWWj1Bi0wLV_NMXZ9ugKIOE37Wo"
+        }
+      },
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "ACCESS_BACKGROUND_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "SYSTEM_ALERT_WINDOW",
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "versionCode": 30
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6f2ddb4e-5cb6-4fe9-955f-ac2af0024f04"
+      }
+    }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-8021607588378779~8393795722"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "459784636155",
+    "project_id": "prueba-tecnica-75ee3",
+    "storage_bucket": "prueba-tecnica-75ee3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459784636155:android:1141ad423baff616be125e",
+        "android_client_info": {
+          "package_name": "com.abijij.appFraiche"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI94cWojYSSlzcE8lX6xXHV00EKGqB2_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
